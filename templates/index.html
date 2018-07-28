@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Property Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container" class="form-group">
+        <div class="page-header">
+            <h1>Property Analysis Webpage</h1>
+        </div>
+        <br>
+        <label for="usr">Enter Details (UK):</label>
+        <form action="{{url_for('result')}}" method="POST">
+            <div>
+                <input type="text" class="form-control" style="width:15%" placeholder="Postcode" name="city"></input>
+                <br>
+                <input type="text" class="form-control" style="width:15%" placeholder="Bedrooms" name="beds"></input>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value = "checked" name="checked">Include Average Rent</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <br>
+        <footer class="footer" style="color:white">
+            <p> Click <a href="/test" style ="color:white">here</a> for test page</p>
+        </footer>
+    </div>
+</body>
+
+</html>
